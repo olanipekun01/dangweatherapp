@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <meta http-equiv="X-UA-Compatible" content="IE=edge">
+           <title>Weather app</title>
+           <link type="text/css" rel="stylesheet"  href="style/main.css">
+           <link rel="manifest" href="/manifest.json">
+           <!--Ios support-->
+           <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+           <meta name="apple-mobile-web-app-status-bar" content="#aa7700">
+           <meta name="theme-color" content="81FFEF">
+
+    </head>
+    <body>
+        <div class="app-wrap">
+            <header>
+                <input type="text" autocomplete="off" class="search-box"
+                placeholder="Search for a city..."/>
+            </header>
+            <main>
+               <section class="location">
+                   <div class="city"></div>
+                   <div class="date"></div>
+               </section>
+               <div class="current">
+                   <div class="temp">_<span>°c</span></div>
+                   <div class="weather"></div>
+                   <div class="hi-low"></div>
+               </div>
+
+            </main>
+
+        </div>
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.19.1/firebase-app.js"></script>
+
+
+
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBmziUBIemJMhccu4I5p-2-aPq0R5SRR4A",
+    authDomain: "dang-weather-app.firebaseapp.com",
+    databaseURL: "https://dang-weather-app.firebaseio.com",
+    projectId: "dang-weather-app",
+    storageBucket: "dang-weather-app.appspot.com",
+    messagingSenderId: "373244174749",
+    appId: "1:373244174749:web:94c8b0141243446c524f74",
+    measurementId: "G-9GE1JS6QS5"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+</script>
+
+        <script type="text/javascript" src="script/dex.js"></script>
+        <script type="text/javascript" src="script/app.js"></script>
+
+    </body>
+</html>
